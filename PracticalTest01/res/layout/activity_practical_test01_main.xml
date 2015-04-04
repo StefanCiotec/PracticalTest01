@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ro.pub.cs.systems.pdsd.practicaltest01.PracticalTest01MainActivity" >
+
+    <Button
+        android:id="@+id/navigate_to_secondary_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Navigate to secondary activity" />
+
+    <Button
+        android:id="@+id/right_press_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/left_press_me"
+        android:layout_alignBottom="@+id/left_press_me"
+        android:layout_alignParentRight="true"
+        android:text="Press Me, Too!" />
+
+    <TextView
+        android:id="@+id/right_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/left_press_me"
+        android:layout_alignLeft="@+id/right_press_me"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="0"
+        android:saveEnabled="false" />
+
+    <TextView
+        android:id="@+id/left_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/navigate_to_secondary_activity_button"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/right_textView"
+        android:gravity="center"
+        android:text="0"
+        android:saveEnabled="false" />
+
+    <Button
+        android:id="@+id/left_press_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/navigate_to_secondary_activity_button"
+        android:layout_below="@+id/left_textView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Press Me!" />
+
+</RelativeLayout>
